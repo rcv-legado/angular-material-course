@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" type="" href="app.css">
+
+</head>
+
+<body ng-app="MyApp" layout="column">
+
+
+    <md-toolbar>
+        <h1>Angular Material</h1>
+    </md-toolbar>
+
+    <div class="container" layout="row" flex>
+
+        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+            <md-list>
+                
+                <md-list-item class="md-3-line" ng-click="null">
+                    <img ng-src="img/avatars/1.jpg" class="md-avatar" alt="Heroe" />
+                    <div class="md-list-item-text" layout="column">
+                        <h3>Superman</h3>
+                        <p>Greatest hero ever</p>
+                    </div>
+                </md-list-item>
+
+            </md-list>
+        </md-sidenav>
+
+        <md-content id="content" flex>
+            Content
+        </md-content>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+    <script type="text/javascript">    
+
+    angular.module('MyApp', ['ngMaterial']).run(function(){
+
+    });
+  </script>
+
+</body>
+
+</html>
