@@ -5,36 +5,35 @@
     <title></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-
+    <style>
+        [layout] > div {
+            padding: 20px;
+            margin: 3px;
+            color: white
+        }
+        
+        [layout] > div:nth-child(1) {
+            background-color: #009688;
+        }
+        
+        [layout] > div:nth-child(2) {
+            background-color: #3949ab;
+        }
+    </style>
 </head>
 
-<body ng-app="MyApp" layout="column">
+<body ng-app="MyApp">
 
+    <h2>Row</h2>
+    <div layout="row">
+        <div flex>First item in row</div>
+        <div flex>Second item in row</div>
+    </div>
 
-    <md-toolbar>
-        <h1>Angular Material</h1>
-    </md-toolbar>
-
-    <div class="container" layout="row" flex>
-
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
-            <md-list>
-                
-                <md-list-item class="md-3-line" ng-click="null">
-                    <img ng-src="img/avatars/1.jpg" class="md-avatar" alt="Hero" />
-                    <div class="md-list-item-text" layout="column">
-                        <h3>Superman</h3>
-                        <p>Greatest hero ever</p>
-                    </div>
-                </md-list-item>
-
-            </md-list>
-        </md-sidenav>
-
-        <md-content id="content" flex>
-            Content
-        </md-content>
-
+    <h2>Comumn</h2>
+    <div layout="column">
+        <div flex>First item in column</div>
+        <div flex>Second item in column</div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>

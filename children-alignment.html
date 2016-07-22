@@ -5,37 +5,50 @@
     <title></title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
-
+    <style>
+        [layout] {
+            height: 100vh
+        }
+        
+        [layout] > div {
+            padding: 20px;
+            border: 1px solid white;
+            color: white;
+            background-color: #009688;
+        }
+    </style>
 </head>
 
-<body ng-app="MyApp" layout="column">
+<body ng-app="MyApp">
+
+    <!--
 
 
-    <md-toolbar>
-        <h1>Angular Material</h1>
-    </md-toolbar>
+Primeiro parâmetro (Horizontal)
 
-    <div class="container" layout="row" flex>
+none
+start (default)
+center
+end
+space-around
+space-between
 
-        <md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
-            <md-list>
-                
-                <md-list-item class="md-3-line" ng-click="null">
-                    <img ng-src="img/avatars/1.jpg" class="md-avatar" alt="Hero" />
-                    <div class="md-list-item-text" layout="column">
-                        <h3>Superman</h3>
-                        <p>Greatest hero ever</p>
-                    </div>
-                </md-list-item>
+Segundo parâmetro (Vertical)
 
-            </md-list>
-        </md-sidenav>
+none
+start
+center
+end
+stretch (default)
 
-        <md-content id="content" flex>
-            Content
-        </md-content>
-
+    -->
+    <div layout="row" layout-align="center center">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
     </div>
+
+
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
